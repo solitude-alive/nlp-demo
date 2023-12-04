@@ -1,5 +1,5 @@
 from data.CharacterLevel import *
-from model.rnn import RNN
+from model.rnn import RNNSimple
 import torch.nn as nn
 import time
 import math
@@ -62,8 +62,8 @@ def get_data():
 
 
 # Just return an output given a line
-def evaluate(line_tensor):
-    hidden = rnn.init_hidden()
+def evaluate(rnn, line_tensor):
+    hidden = rnn.init_hidden().to(device)
 
     output = None
 
@@ -82,7 +82,7 @@ if __name__ == '__main__':
     print_every = 5000
     plot_every = 1000
 
-    rnn = RNN(n_letters, hidden_size=128, output_size=n_categories).to(device)
+    rnn = RNNSimple(n_letters, hidden_size=128, output_size=n_categories).to(device)
 
     criterion = nn.NLLLoss().to(device)
 
@@ -122,7 +122,7 @@ if __name__ == '__main__':
     # Go through a bunch of examples and record which are correctly guessed
     for i in range(n_confusion):
         category, line, category_tensor, line_tensor = randomTrainingExample(category_lines, all_categories)
-        output = evaluate(line_tensor)
+        output = evaluate(rnn, line_tensor.to(device))
         guess, guess_i = category_from_output(output, all_categories)
         category_i = all_categories.index(category)
         confusion[category_i][guess_i] += 1

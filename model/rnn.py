@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 
 
-class RNN(nn.Module):
+class RNNSimple(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):
-        super(RNN, self).__init__()
+        super(RNNSimple, self).__init__()
 
         self.hidden_size = hidden_size
 
