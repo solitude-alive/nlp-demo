@@ -14,8 +14,8 @@
 ## [NLP: Text Classification](./AGnewsDemo.py)
 
 * Reference: [AI for Beginners](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/16-RNN/RNNPyTorch.ipynb)
-* Script and Dataset:
-  > ./data/agnews.py \
-  > ./model/rnn.py \
-  > ./model/lstm.py \
-  > ./AGnewsDemo.py
+  * Script and Dataset:
+  >   ./data/agnews.py \
+  >   ./model/rnn.py \
+  >   ./model/lstm.py \
+  >   ./AGnewsDemo.py
