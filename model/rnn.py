@@ -18,3 +18,6 @@ class RNN(nn.Module):
         output = self.h2o(hidden)
         output = self.softmax(output)
         return output, hidden
+
+    def init_hidden(self):
+        return torch.zeros(1, self.hidden_size)
