@@ -7,7 +7,7 @@
   >   ./data/CharacterLevel.py \
   >   ./model/rnn.py \
   >   ./CharacterLevelDemo.py \
-  >   ./dataset/character \
+  >   ./dataset/character
 * Output
   > ./Output/CharacterLevelDemo_xxx.png
   
@@ -18,4 +18,4 @@
   > ./data/agnews.py \
   > ./model/rnn.py \
   > ./model/lstm.py \
-  > ./AGnewsDemo.py \
+  > ./AGnewsDemo.py
