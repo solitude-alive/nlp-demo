@@ -35,7 +35,7 @@ def read_lines(filename):
     return [unicode_to_ascii(line) for line in lines]
 
 
-for file in findfiles('../dataset/data/names/*.txt'):
+for file in findfiles('../dataset/character/names/*.txt'):
     # os.path.basename: return the base name of pathname, os.path.splitext: split the path name into a pair root and ext
     category = os.path.splitext(os.path.basename(file))[0]
     all_categories.append(category)
@@ -73,7 +73,7 @@ def category_from_output(output, all_categories):
 
 
 if __name__ == '__main__':
-    print(findfiles('../dataset/data/names/*.txt'))
+    print(findfiles('../dataset/character/names/*.txt'))
 
     print(unicode_to_ascii('Ślusàrski'))
 
