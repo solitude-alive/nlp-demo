@@ -11,8 +11,6 @@ def findfiles(path):
     return glob.glob(path)  # Return a list of paths matching a pathname pattern
 
 
-print(findfiles('../dataset/data/names/*.txt'))
-
 all_letters = string.ascii_letters + " .,;'"  # string.ascii_letters: ascii_lowercase + ascii_uppercase
 n_letters = len(all_letters)
 
@@ -25,8 +23,6 @@ def unicode_to_ascii(s: string) -> string:  # fileter out all non-ASCII characte
         and c in all_letters
     )
 
-
-print(unicode_to_ascii('Ślusàrski'))
 
 # Build the category_lines dictionary, a list of names per language
 category_lines = {}
@@ -70,6 +66,17 @@ def line_to_tensor(line):
     return tensor
 
 
-print(letter_to_tensor('J'))
+def category_from_output(output, all_categories):
+    top_n, top_i = output.topk(1)
+    category_i = top_i[0].item()
+    return all_categories[category_i], category_i
 
-print(line_to_tensor('Jones').size())
+
+if __name__ == '__main__':
+    print(findfiles('../dataset/data/names/*.txt'))
+
+    print(unicode_to_ascii('Ślusàrski'))
+
+    print(letter_to_index('J'))
+
+    print(line_to_tensor('Jones').size())
