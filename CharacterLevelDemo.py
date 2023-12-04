@@ -6,6 +6,7 @@ import math
 import random
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
+import os
 
 
 def randomChoice(l):
@@ -75,6 +76,9 @@ def evaluate(rnn, line_tensor):
 
 if __name__ == '__main__':
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    output_dir = "./output"
+
     category_lines, all_categories = get_data()
     n_categories = len(all_categories)
 
@@ -114,6 +118,7 @@ if __name__ == '__main__':
     # Plotting the results
     plt.figure()
     plt.plot(all_losses)
+    plt.savefig(os.path.join(output_dir, "CharacterLevelDemo_loss.png"))
 
     # Keep track of correct guesses in a confusion matrix
     confusion = torch.zeros(n_categories, n_categories)
@@ -146,4 +151,5 @@ if __name__ == '__main__':
     ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
 
     # sphinx_gallery_thumbnail_number = 2
-    plt.show()
+    plt.savefig(os.path.join(output_dir, "CharacterLevelDemo_confusion_matrix.png"))
+
