@@ -63,7 +63,7 @@ def get_data():
 
 # Just return an output given a line
 def evaluate(line_tensor):
-    hidden = rnn.initHidden()
+    hidden = rnn.init_hidden()
 
     output = None
 
