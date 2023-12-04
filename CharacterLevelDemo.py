@@ -53,7 +53,7 @@ def get_data():
     category_lines = {}
     all_categories = []
 
-    for file in findfiles('./dataset/character/names/*.txt'):
+    for file in findfiles('dataset/data/names/*.txt'):
         category = os.path.splitext(os.path.basename(file))[0]
         all_categories.append(category)
         lines_file = read_lines(file)
