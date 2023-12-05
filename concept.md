@@ -8,6 +8,8 @@
 
 ### Perplexity
 
+### Temperature
+
 
 ## Model Card
 
