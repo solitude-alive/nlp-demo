@@ -10,6 +10,8 @@
 
 ### LSTM: Long Short-Term Memory
 
+### Attention
+> **Context Vector** is an expected value
 
 ## Metric
 
