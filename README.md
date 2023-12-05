@@ -31,3 +31,16 @@
   >   dataset/data
   * Output
   >   Output/CharacterTranslationDemo_xxx.png
+
+## Quick Start
+
+### 1. Install environment
+```
+conda env create -f environment.yml
+```
+
+### 2. Download the dataset
+
+See the [Dataset Download](dataset/download.md), the data will be saved in `dataset` directory.
+
+### 3. Run the `xxxdemo.py` script
