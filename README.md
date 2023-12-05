@@ -19,3 +19,15 @@
   >   model/rnn.py \
   >   model/lstm.py \
   >   AGnewsDemo.py
+  
+## [NLP From Scratch: Translation with a Sequence to Sequence Network and Attention](./CharacterTranslationDemo.py)
+
+* Reference: [PyTorch Tutorials](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html)
+  * Script and Dataset:
+  >   data/CharacterTranslation.py \
+  >   model/rnn.py \
+  >   model/attentionrnn.py \
+  >   CharacterTranslationDemo.py \
+  >   dataset/data
+  * Output
+  >   Output/CharacterTranslationDemo_xxx.png
