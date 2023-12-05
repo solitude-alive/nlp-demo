@@ -1,5 +1,14 @@
 # Concept in NLP
 
+## Concept
+
+### One-hot vector
+
+### Word Embedding
+
+### Perplexity
+
+
 ## Model Card
 
 ### RNN: Recurrent Neural Networks
@@ -12,6 +21,9 @@
 
 ### Attention
 > **Context Vector** is an expected value
+
+### Transformer
+
 
 ## Metric
 
