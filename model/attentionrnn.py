@@ -48,7 +48,7 @@ class AttnDecoderRNN(nn.Module):
                 decoder_input = target_tensor[:, i].unsqueeze(1)  # Teacher forcing
             else:
                 # Without teacher forcing: use its own predictions as the next input
-                _, topi = decoder_output.topk(1)
+                _, topi = decoder_output.topk(1)        # find the top(k) max value, return (value, index)
                 decoder_input = topi.squeeze(-1).detach()  # detach from history as input
 
         decoder_outputs = torch.cat(decoder_outputs, dim=1)
