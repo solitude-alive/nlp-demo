@@ -7,3 +7,11 @@
 ### Bi-directional RNNs
 
 ### GRU: Gated Recurrent Units
+
+### LSTM: Long Short-Term Memory
+
+
+## Metric
+
+### BLEU: Bilingual Evaluation Understudy
+
