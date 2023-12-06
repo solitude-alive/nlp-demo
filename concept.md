@@ -45,7 +45,7 @@
 ### Temperature in sampling
 
 ### Greedy Decoding
-* **Lower temperature setting:** More confident, conservative network \
+* **Lower temperature setting:** More confident, conservative network
 * **Higher temperature setting:** More excited, random network
 
 ### Beam Search
