@@ -47,3 +47,7 @@
  **Lower temperature setting:** More confident, conservative network \
  **Higher temperature setting:** More excited, random network
 
+### Beam Search
+Problem:
+>> 1. Penalizes long sequences, so you should normalize by the sentence length
+>> 2. Computationally expensive and consumes a lot of memory
