@@ -37,3 +37,12 @@
 ### ROUGE: Recall-Oriented Understudy for Gisting Evaluation
 
 
+## Sampling and Decoding:
+
+### Random sampling
+
+### Temperature in sampling
+
+### Greedy decoding
+> **Lower temperature setting:** More confident, conservative network
+> **Higher temperature setting:** More excited, random network
