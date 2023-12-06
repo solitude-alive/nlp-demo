@@ -1,6 +1,7 @@
 # Concept in NLP
 
-## Concept
+
+## 1. Concept
 
 ### One-hot vector
 
@@ -11,7 +12,7 @@
 ### Temperature
 
 
-## Model Card
+## 2. Model Card
 
 ### RNN: Recurrent Neural Networks
 
@@ -22,22 +23,22 @@
 ### LSTM: Long Short-Term Memory
 
 ### Attention
-> **Context Vector** is an expected value
+* **Context Vector** is an expected value
 
 ### Transformer
 
 
-## Metric
+## 3. Metric
 
 ### F1 score
 
 ### BLEU: Bilingual Evaluation Understudy
-> The closer to 1, the better
+* The closer to 1, the better
 
 ### ROUGE: Recall-Oriented Understudy for Gisting Evaluation
 
 
-## Sampling and Decoding:
+## 4. Sampling and Decoding
 
 ### Random sampling
 
@@ -48,7 +49,6 @@
  **Higher temperature setting:** More excited, random network
 
 ### Beam Search
-Problem:
-> 1. Penalizes long sequences, so you should normalize by the sentence length
-> 2. Computationally expensive and consumes a lot of memory
-
+* Problem:
+  >1. Penalizes long sequences, so you should normalize by the sentence length
+  >2. Computationally expensive and consumes a lot of memory
