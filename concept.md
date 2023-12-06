@@ -44,5 +44,6 @@
 ### Temperature in sampling
 
 ### Greedy decoding
-> **Lower temperature setting:** More confident, conservative network
-> **Higher temperature setting:** More excited, random network
+ **Lower temperature setting:** More confident, conservative network \
+ **Higher temperature setting:** More excited, random network
+
