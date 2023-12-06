@@ -29,5 +29,11 @@
 
 ## Metric
 
+### F1 score
+
 ### BLEU: Bilingual Evaluation Understudy
+> The closer to 1, the better
+
+### ROUGE: Recall-Oriented Understudy for Gisting Evaluation
+
 
