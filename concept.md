@@ -39,6 +39,8 @@
 
 ### ROUGE: Recall-Oriented Understudy for Gisting Evaluation
 
+## GLUE: General Language Understanding Evaluation
+
 
 ## 4. Sampling and Decoding
 
