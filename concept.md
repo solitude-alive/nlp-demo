@@ -52,3 +52,5 @@
 * Problem:
   >1. Penalizes long sequences, so you should normalize by the sentence length
   >2. Computationally expensive and consumes a lot of memory
+
+### MBR: Minimum Bayes Risk
