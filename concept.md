@@ -26,6 +26,8 @@
 * **Context Vector** is an expected value
 
 ### Transformer
+* Transformer Model
+  > **T5, GPT-2, BERT**
 
 
 ## 3. Metric
